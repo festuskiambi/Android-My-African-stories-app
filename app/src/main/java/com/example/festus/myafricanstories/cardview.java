@@ -1,41 +1,37 @@
 package com.example.festus.myafricanstories;
 
-import android.content.Intent;
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
-public class splashscreen extends ActionBarActivity {
+public class cardview extends Activity {
+    TextView textView;
+    TextView textView2;
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splashscreen);
-        Thread backGround = new Thread(){
-            public void run(){
-                try {
-                    sleep(5*1000);//time in seconds that the splash screen takes
+        setContentView(R.layout.activity_cardview);
+        textView=(TextView)findViewById(R.id.textView);
+        textView2=(TextView)findViewById(R.id.textView2);
+        imageView=(ImageView)findViewById(R.id.imageView);
 
-
-                    Intent intent = new Intent(getBaseContext(), recylerview.class);
-                    startActivity(intent);
-                    finish();
-                }
-                catch (Exception e){
-                }
-            }
-
-        };
-        backGround.start();
+      textView.setText("Emma Wilson");
+        textView2.setText("23 years old");
+        imageView.setImageResource(R.drawable.images);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_splashscreen, menu);
+        getMenuInflater().inflate(R.menu.menu_cardview, menu);
         return true;
     }
 

@@ -1,41 +1,24 @@
 package com.example.festus.myafricanstories;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class splashscreen extends ActionBarActivity {
+public class ac extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splashscreen);
-        Thread backGround = new Thread(){
-            public void run(){
-                try {
-                    sleep(5*1000);//time in seconds that the splash screen takes
-
-
-                    Intent intent = new Intent(getBaseContext(), recylerview.class);
-                    startActivity(intent);
-                    finish();
-                }
-                catch (Exception e){
-                }
-            }
-
-        };
-        backGround.start();
+        setContentView(R.layout.activity_ac);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_splashscreen, menu);
+        getMenuInflater().inflate(R.menu.menu_ac, menu);
         return true;
     }
 

@@ -8,15 +8,6 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-
-            </intent-filter>
-        </activity>
-        <activity
             android:name=".splashscreen"
             android:label="@string/title_activity_splashscreen" >
             <intent-filter>
@@ -25,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".recylerview"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name=".ac"
+            android:label="@string/title_activity_ac" >
+        </activity>
+    </application>
 
-</application>
 </manifest>
