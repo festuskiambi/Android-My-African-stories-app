@@ -21,9 +21,6 @@ public class Storyitems {
     private List<Storyitems> stories;
 
     private void initializeAdapter() {
-        stories = new ArrayList<>();
-        stories.add(new Storyitems("mystory", "this story", R.drawable.images));
-        stories.add(new Storyitems("mystory", "this story", R.drawable.images));
-        stories.add(new Storyitems("Lillie Watts", "35 years old", R.drawable.images));
+
     }
 }

@@ -24,7 +24,7 @@ public class recylerview extends Activity {
 
         LinearLayoutManager llm = new LinearLayoutManager(this);
         rv.setLayoutManager(llm);
-        rv.setHasFixedSize(true);
+
 
         initializeData();
         initializeAdapter();
@@ -39,9 +39,20 @@ public class recylerview extends Activity {
 
     private void initializeData() {
         stories = new ArrayList<>();
-            stories.add(new Storyitems("Emma Wilson", "23 years old", R.drawable.images));
-            stories.add(new Storyitems("Lavery Maiss", "25 years old", R.drawable.images));
-            stories.add(new Storyitems("Lillie Watts", "35 years old", R.drawable.images));
+            stories.add(new Storyitems("The tortoise", "This story is about ...", R.drawable.img2));
+        stories.add(new Storyitems("The three sisters", "IN the village of Kinga there ...", R.drawable.img3));
+        stories.add(new Storyitems("Cinderella", "A story is told of a fare lady ...", R.drawable.img4));
+        stories.add(new Storyitems("The tortoise", "This story is about ...", R.drawable.img2));
+        stories.add(new Storyitems("The three sisters", "IN the village of Kinga there ..", R.drawable.img3));
+        stories.add(new Storyitems("Cinderella", "A story is told of a fare lady ...", R.drawable.img4));
+
+        stories.add(new Storyitems("The tortoise", "This story is about ...", R.drawable.img2));
+        stories.add(new Storyitems("The three sisters", "IN the village of Kinga there ..", R.drawable.img3));
+        stories.add(new Storyitems("Cinderella", "A story is told of a fare lady ...", R.drawable.img4));
+
+        stories.add(new Storyitems("The tortoise", "This story is about ...", R.drawable.img2));
+        stories.add(new Storyitems("The three sisters", "IN the village of Kinga there ..", R.drawable.img3));
+        stories.add(new Storyitems("Cinderella", "A story is told of a fare lady ...", R.drawable.img4));
         }
         
 
