@@ -24,6 +24,10 @@
             android:name=".ac"
             android:label="@string/title_activity_ac" >
         </activity>
+        <activity
+            android:name=".Viewholder"
+            android:label="@string/title_activity_viewholder" >
+        </activity>
     </application>
 
 </manifest>

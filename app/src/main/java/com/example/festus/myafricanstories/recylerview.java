@@ -6,6 +6,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,22 +41,22 @@ public class recylerview extends Activity {
 
     private void initializeData() {
         stories = new ArrayList<>();
-            stories.add(new Storyitems("The tortoise", "This story is about ...", R.drawable.img2));
+            stories.add(new Storyitems("The tortoise", "This story is about ...", R.drawable.img1));
         stories.add(new Storyitems("The three sisters", "IN the village of Kinga there ...", R.drawable.img3));
         stories.add(new Storyitems("Cinderella", "A story is told of a fare lady ...", R.drawable.img4));
         stories.add(new Storyitems("The tortoise", "This story is about ...", R.drawable.img2));
         stories.add(new Storyitems("The three sisters", "IN the village of Kinga there ..", R.drawable.img3));
-        stories.add(new Storyitems("Cinderella", "A story is told of a fare lady ...", R.drawable.img4));
+        stories.add(new Storyitems("Cinderella", "A story is told of a fare lady ...", R.drawable.img1));
 
         stories.add(new Storyitems("The tortoise", "This story is about ...", R.drawable.img2));
         stories.add(new Storyitems("The three sisters", "IN the village of Kinga there ..", R.drawable.img3));
         stories.add(new Storyitems("Cinderella", "A story is told of a fare lady ...", R.drawable.img4));
 
         stories.add(new Storyitems("The tortoise", "This story is about ...", R.drawable.img2));
-        stories.add(new Storyitems("The three sisters", "IN the village of Kinga there ..", R.drawable.img3));
+        stories.add(new Storyitems("The three sisters", "IN the village of Kinga there ..", R.drawable.img1));
         stories.add(new Storyitems("Cinderella", "A story is told of a fare lady ...", R.drawable.img4));
         }
-        
+
 
 
 
@@ -63,7 +65,11 @@ public class recylerview extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_recylerview, menu);
         return true;
+
+
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

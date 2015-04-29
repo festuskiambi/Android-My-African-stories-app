@@ -16,7 +16,7 @@ public class splashscreen extends ActionBarActivity {
         Thread backGround = new Thread(){
             public void run(){
                 try {
-                    sleep(5*1000);//time in seconds that the splash screen takes
+                    sleep(3*1000);//time in seconds that the splash screen takes
 
 
                     Intent intent = new Intent(getBaseContext(), recylerview.class);

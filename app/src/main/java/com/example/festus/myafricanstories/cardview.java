@@ -16,15 +16,16 @@ public class cardview extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        /*super.onCreate(savedInstanceState);
+super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cardview);
         textView=(TextView)findViewById(R.id.textView);
         textView2=(TextView)findViewById(R.id.textView2);
         imageView=(ImageView)findViewById(R.id.imageView);
 
-       *//*textView.setText("The Hare And The Hyena");
+
+textView.setText("The Hare And The Hyena");
         textView2.setText("Once upon a time ...");
-        imageView.setImageResource(R.drawable.img1);*//*
+        imageView.setImageResource(R.drawable.img1);
     }
 
 
@@ -47,6 +48,7 @@ public class cardview extends Activity {
             return true;
         }
 
-        return super.onOptionsItemSelected(item);*/
+        return super.onOptionsItemSelected(item);
+
     }
 }
