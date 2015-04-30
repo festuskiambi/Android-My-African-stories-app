@@ -26,7 +26,7 @@ import static  android.support.v7.widget.RecyclerView.*;
 
     public class RVAdapter extends RecyclerView.Adapter<RVAdapter.PersonViewHolder> {
 
-
+        List<Storyitems> stories;
         public  class PersonViewHolder extends ViewHolder {
             CardView cv;
             TextView textView;
@@ -39,18 +39,13 @@ import static  android.support.v7.widget.RecyclerView.*;
                 textView = (TextView) itemView.findViewById(R.id.textView);
                 textView2 = (TextView) itemView.findViewById(R.id.textView2);
                 imageView = (ImageView) itemView.findViewById(R.id.imageView);
-               final Context context = cv.getContext();
-                cv.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(final View v) {
-                        Toast.makeText(context, "this s my toast", Toast.LENGTH_LONG).show();
 
-                    }
-                });
+
+
             }
         }
 
-        List<Storyitems> stories;
+
 
         RVAdapter(List<Storyitems> stories) {
             this.stories = stories;
@@ -65,7 +60,7 @@ import static  android.support.v7.widget.RecyclerView.*;
 
         @Override
         public RVAdapter.PersonViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-            final Context contex = viewGroup.getContext();
+
             View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item, viewGroup, false);
             PersonViewHolder pvh = new PersonViewHolder(v);
 
@@ -76,12 +71,25 @@ import static  android.support.v7.widget.RecyclerView.*;
 
         @Override
         public void onBindViewHolder(RVAdapter.PersonViewHolder holder, int i) {
+
             holder.textView.setText(stories.get(i).title);
             holder.textView2.setText(stories.get(i).introduction);
             holder.imageView.setImageResource(stories.get(i).imageId);
+        final Context   context=  holder.cv.getContext();
+            final String name = String.valueOf(i);
+            holder.cv.setOnClickListener(new View.OnClickListener() {
 
+                @Override
+                public void onClick(final View v) {
 
+                    Toast.makeText(context,"you selected index:"+ name, Toast.LENGTH_SHORT).show();
+
+                }
+            });
         }
+
+
+
 
         @Override
         public int getItemCount() {
