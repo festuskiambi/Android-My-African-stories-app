@@ -28,6 +28,10 @@
             android:name=".Viewholder"
             android:label="@string/title_activity_viewholder" >
         </activity>
+        <activity
+            android:name=".Show_story"
+            android:label="@string/title_activity_show_story" >
+        </activity>
     </application>
 
 </manifest>

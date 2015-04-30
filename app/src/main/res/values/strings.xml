@@ -7,4 +7,5 @@
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_ac">ac</string>
     <string name="title_activity_viewholder">Viewholder</string>
+    <string name="title_activity_show_story">Show_story</string>
 </resources>

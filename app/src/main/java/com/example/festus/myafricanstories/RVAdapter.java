@@ -82,7 +82,7 @@ import static  android.support.v7.widget.RecyclerView.*;
                 @Override
                 public void onClick(final View v) {
 
-                    Toast.makeText(context,"you selected index:"+ name, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(context,"you selected cardview at index:"+ name, Toast.LENGTH_SHORT).show();
 
                 }
             });
